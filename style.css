@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a{
+    text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2f2e41;
+    letter-spacing: 1px;
+}
+.searchArea{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.1);
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgba(167, 158, 245, 0.1);
+}
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:#1f1f1f;
+    font-size:1rem;
+    padding:0px 10px;
+}
+.searchbox input::placeholder{
+    color: #1f1f1f;
+    letter-spacing: 1px;
+    font-family:poppins;
+    font-size:0.8rem;
+}
+
+.section1{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+}
+.section1 img{
+    height: 300px;
+}
+.section1Button{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%,-50%);
+}
+.section1Button h1, h2{
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 4rem;
+    text-shadow: rgba(0,0,0,0.8);
+    letter-spacing: 3px;
+    color: #3d3d4a;
+    text-transform: uppercase;
+}
+span{
+    color: #7a72ff;
+}
+.section1Button h1{
+    letter-spacing: 35px;
+}
+
+.btn{
+    width: 170px;
+    height: 50px;
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: transparent !important;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: #726dc8;
+    transition-duration: 1s;
+}
+.iconArea a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+.iconArea{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgb(161, 159, 159);
+    padding: 5px 0px;
+    z-index: 1;
+}
+
+.iconArea a i{
+    color: #1f1f1f;
+}
+.iconArea a:hover .fa-facebook-f{
+    color: blue;
+}
+.iconArea a:hover .fa-twitter{
+    color: rgb(22, 106, 203);
+}
+.iconArea a:hover .fa-instagram{
+    color: rgb(247, 41, 41);
+}
+.iconArea a:hover .fa-youtube{
+    color: red;
+}
+
+.productSection{
+    width: 85%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+
+}
+.productSection h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: myriad pro;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    color: #1f1f1f;
+    letter-spacing: 2px;
+
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productBox{
+    width: 300px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productBox img{
+    height: 180px;
+    
+}
+
+.productBox p{
+    color: rgb(138, 139, 142);
+    font-family: myriad pro;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+    margin: 5px;
+}
+.productBox a{
+    color: #1f1f1f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    margin: 5px ;
+}
+
+.BuyBtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background-color: #726dc8;
+    color: #FFFFFF;
+    display: none;
+    animation: fade 0.2s;
+}
+
+.productBox:hover .BuyBtn{
+   display: flex;
+   color: #FFFFFF;
+   transition: all 1s;
+
+}
+
+.productBox:hover{
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+.productBox:hover{
+    transition: 1s;
+} 
+
+.about{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto;
+    padding: 30px;
+    
+}
+.a{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.b{
+    font-size: 2rem;
+    text-transform: unset;
+}
+.aboutBox img{
+    width: 600px;
+}
+p{
+    color: rgb(160, 162, 163);
+}
+
+.Notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(150, 156, 163);
+}
+.Notification h1{
+    font-size: 2rem;
+    color: #1f1f1f;
+}
+
+.NotificationInput{
+    width: 500px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px #b4acac;
+    margin-top: 30px;
+    
+}
+.NotificationInput input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+}
+
+.NotificationButton{
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    border: 1px solid ;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.NotificationButton:hover{
+    background-color: #726dc8;
+    transition: 1s;
+}
+
+footer{
+    width: 100%;
+    
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+footer p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+}
